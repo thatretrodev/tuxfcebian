@@ -12,7 +12,7 @@ cd build
 
 # Configure
 
-lb config -a amd64 -b iso-hybrid --apt apt --debian-installer cdrom -d bullseye --mode debian --debian-installer-gui true
+lb config -a amd64 -b iso-hybrid --apt apt -d bullseye --mode debian --compression gzip --image-name tuxfcebian --iso-publisher thatretrodev
 
 rm config/package-lists/live.list.chroot
 cp ../config/live.list.chroot config/package-lists
